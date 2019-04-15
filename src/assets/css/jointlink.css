@@ -1,0 +1,9 @@
+.link-tools {
+    	display: none !important;
+	}
+	.link {
+   		pointer-events: none;
+	}
+	.marker-arrowheads {
+    	display: none;
+	}

@@ -1,0 +1,71 @@
+import ManageWorkflowRoute from '../components/processWorkflow/manageWorkflowroute.vue'
+import ManageWorkflowMapping from '../components/processWorkflow/manageWorkflowmapping.vue'
+import ManageApprovalTask from '../components/processWorkflow/manageTaskapproval.vue'
+import ManageTaskForApprovalList from '../components/processWorkflow/managetaskforapprovallist.vue'
+import WorkflowRouteList from '../components/processWorkflow/workflowrouteList.vue'
+import WorkflowMappingList from '../components/processWorkflow/workflowmappingList.vue'
+import TaskHistory from '../components/processWorkflow/taskHistoryList.vue
+{
+    path: '/manageworkflowroute',
+    name: 'ManageWorkflowRoute',
+    component: ManageWorkflowRoute,
+    meta: {
+        breadcrumb: 'Home / AddWorkflowRoute'
+    }
+},
+{
+    path: '/:workflow_id/editworkflowroute',
+    name: 'editWorkflowRoute',
+    component: ManageWorkflowRoute,
+    meta: {
+        breadcrumb: 'Home / Workflow Route List / Edit Workflow Route'
+    }
+},
+{
+    path: '/manageworkflowmapping',
+    name: 'ManageWorkflowMapping',
+    component: ManageWorkflowMapping,
+    meta: {
+        breadcrumb: 'Home / AddWorkflowMapping'
+    }
+},
+{
+    path: '/:id/editworkflowmapping',
+    name: 'editWorkflowMapping',
+    component: ManageWorkflowMapping,
+    meta: {
+        breadcrumb: 'Home / Manage Workflow Mapping / Edit Workflow Mapping'
+    }
+},
+{
+    path: '/workflowRouteList',
+    name: 'WorkflowRouteList',
+    component: WorkflowRouteList,
+    meta: {
+        breadcrumb: 'Home / WorkflowRouteList'
+    }
+},
+{
+    path: '/workflowmappingList',
+    name: 'WorkflowMappingList',
+    component: WorkflowMappingList,
+    meta: {
+        breadcrumb: 'Home / WorkflowMappingList'
+    }
+},
+{
+    path: '/managepprovaltask',
+    name: 'ManageApprovalTask',
+    component: ManageApprovalTask,
+    meta: {
+        breadcrumb: 'Home / ApprovalTask'
+    }
+},
+{
+    path: '/managetaskforapprovallist',
+    name: 'ManageTaskForApprovalList',
+    component: ManageTaskForApprovalList,
+    meta: {
+        breadcrumb: 'Home / TaskForApprovalList'
+    }
+}
